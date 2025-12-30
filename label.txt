@@ -1,0 +1,10 @@
+Human
+Car
+Truck
+Ship
+Ferry
+Freighter
+Fishing Boat
+Speed Boat
+Inflatable Boat
+Raft

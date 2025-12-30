@@ -1,0 +1,17 @@
+tracker_type: bytetrack
+
+# 調整門檻
+track_high_thresh: 0.45   # (float) First-stage match threshold; raise for cleaner tracks, lower to keep more
+track_low_thresh: 0.1   # (float) Second-stage threshold for low-score matches; balances recovery vs drift
+new_track_thresh: 0.45     # (float) Start a new track if no match ≥ this; higher reduces false tracks
+
+# 緩衝與匹配
+track_buffer: 10000
+match_thresh: 0.4 # (float) Association similarity threshold (IoU/cost); tune with detector quality
+fuse_score: True  # (bool) Fuse detection score with motion/IoU for matching; stabilizes weak detections
+
+# 自訂參數
+delta_t: 5
+mot20: True
+#aspect_ratio_thresh: 1.6
+#min_box_area: 10
